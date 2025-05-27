@@ -17,7 +17,7 @@
         ixy="8.34099127220805E-20"
         ixz="6.53256743568878E-20"
         iyy="0.0285974954758624"
-        iyz="-7.98437892769272E-21"
+        iyz="-7.98437892769275E-21"
         izz="0.0352539264984576" />
     </inertial>
     <visual>
@@ -48,16 +48,16 @@
     name="xbar_top_frame">
     <inertial>
       <origin
-        xyz="0.000811499096929708 8.32667268468867E-16 0.1957"
+        xyz="0.000811499096929666 8.04911692853238E-16 0.1957"
         rpy="0 0 0" />
       <mass
         value="0.180967186857142" />
       <inertia
-        ixx="0.000721536956668615"
+        ixx="0.000721536956668616"
         ixy="-2.7642978576952E-19"
-        ixz="1.94393259520479E-19"
+        ixz="1.94383162100892E-19"
         iyy="0.003879590641316"
-        iyz="1.13519323061358E-19"
+        iyz="1.13530247207173E-19"
         izz="0.00459369904571848" />
     </inertial>
     <visual>
@@ -107,8 +107,8 @@
         value="0.0178174846110633" />
       <inertia
         ixx="1.64411942078336E-06"
-        ixy="-6.08082946633823E-14"
-        ixz="2.61335301810849E-15"
+        ixy="-6.08082946986121E-14"
+        ixz="2.61335306584619E-15"
         iyy="8.9149566286252E-06"
         iyz="1.87998295961392E-07"
         izz="8.30298452857927E-06" />
@@ -161,7 +161,7 @@
       <inertia
         ixx="6.56386397841031E-05"
         ixy="-3.22464227159727E-07"
-        ixz="6.39601909179775E-05"
+        ixz="6.39601909179774E-05"
         iyy="0.00112588477072356"
         iyz="-1.29107457638619E-06"
         izz="0.00108818807546615" />
@@ -207,14 +207,14 @@
     name="left_rocker_wheel_strut">
     <inertial>
       <origin
-        xyz="0.00463075086736053 -0.0474614628973919 -0.172551230026844"
+        xyz="0.00463075086736031 -0.0474614628973919 -0.172551230026844"
         rpy="0 0 0" />
       <mass
         value="0.215297840696796" />
       <inertia
         ixx="0.000267687983183879"
-        ixy="1.7674360958032E-06"
-        ixz="1.40170206954177E-06"
+        ixy="1.76743609580319E-06"
+        ixz="1.40170206954178E-06"
         iyy="0.000248397370479286"
         iyz="-1.54188756477438E-05"
         izz="5.77461596511164E-05" />
@@ -260,10 +260,10 @@
     name="front_left_wheel">
     <inertial>
       <origin
-        xyz="-0.00483668113983005 0.0213634172584402 -1.74860126378462E-15"
+        xyz="-0.00483668113982993 0.0213634172584402 -1.80411241501588E-15"
         rpy="0 0 0" />
       <mass
-        value="0.592760238512045" />
+        value="0.592760238512046" />
       <inertia
         ixx="0.0012756713003382"
         ixy="-0.000202280629685217"
@@ -313,16 +313,16 @@
     name="left_bogie">
     <inertial>
       <origin
-        xyz="0.0759568398824179 -0.0146925582517434 0.00797636955766212"
+        xyz="0.0759568398824178 -0.0146925582517434 0.00797636955766201"
         rpy="0 0 0" />
       <mass
         value="0.191498434857371" />
       <inertia
         ixx="0.000499608172377785"
-        ixy="-1.18339942707917E-10"
-        ixz="-0.000888438614705919"
+        ixy="-1.18339942707853E-10"
+        ixz="-0.00088843861470592"
         iyy="0.00218514017414647"
-        iyz="1.25070233350833E-09"
+        iyz="1.25070233350845E-09"
         izz="0.00170716647882503" />
     </inertial>
     <visual>
@@ -366,16 +366,16 @@
     name="left_middle_wheel">
     <inertial>
       <origin
-        xyz="-0.0132827324711452 0.0586692709131831 -1.346145417358E-15"
+        xyz="-0.0132827324711453 0.0586692709131832 -1.3392065234541E-15"
         rpy="0 0 0" />
       <mass
         value="0.592760238512045" />
       <inertia
         ixx="0.0012756713003382"
         ixy="-0.000202280629685218"
-        ixz="2.71050543121376E-19"
+        ixz="3.25260651745651E-19"
         iyy="0.00212333997025137"
-        iyz="-1.9312351197398E-18"
+        iyz="-1.91768259258374E-18"
         izz="0.00122987493289774" />
     </inertial>
     <visual>
@@ -419,13 +419,13 @@
     name="left_bogie_wheel_strut">
     <inertial>
       <origin
-        xyz="0.00463075063698404 -0.0474614621520017 -0.107848205067026"
+        xyz="0.00463075063698415 -0.0474614621520017 -0.107848205067026"
         rpy="0 0 0" />
       <mass
         value="0.215297841060573" />
       <inertia
         ixx="0.000267687983572951"
-        ixy="1.76743593733556E-06"
+        ixy="1.76743593733558E-06"
         ixz="1.40170220688109E-06"
         iyy="0.000248397370343526"
         iyz="-1.54188765408756E-05"
@@ -479,9 +479,9 @@
       <inertia
         ixx="0.0012756713003382"
         ixy="-0.000202280629685217"
-        ixz="1.89735380184963E-19"
+        ixz="1.0842021724855E-19"
         iyy="0.00212333997025137"
-        iyz="1.49077798716757E-19"
+        iyz="1.28749007982654E-19"
         izz="0.00122987493289774" />
     </inertial>
     <visual>
@@ -525,16 +525,16 @@
     name="rocker_to_frame_mount_right">
     <inertial>
       <origin
-        xyz="0.00190000079764291 -0.194277679658848 0.187230370865528"
+        xyz="0.00190000079764292 -0.194277679658848 0.187230370865528"
         rpy="0 0 0" />
       <mass
         value="0.0178174846110633" />
       <inertia
         ixx="1.64411942078337E-06"
-        ixy="-6.08082948069306E-14"
-        ixz="2.61335167981754E-15"
+        ixy="-6.08082947465613E-14"
+        ixz="2.61335165428216E-15"
         iyy="8.91495662862521E-06"
-        iyz="1.87998295961393E-07"
+        iyz="1.87998295961392E-07"
         izz="8.30298452857928E-06" />
     </inertial>
     <visual>
@@ -578,12 +578,12 @@
     name="right_rocker">
     <inertial>
       <origin
-        xyz="-0.145741139562984 0.0147894287442281 -0.0386401067770017"
+        xyz="-0.145741139562984 0.0147894287442281 -0.0386401067770018"
         rpy="0 0 0" />
       <mass
         value="0.23860136190612" />
       <inertia
-        ixx="6.56386401901882E-05"
+        ixx="6.56386401901881E-05"
         ixy="3.22421996290942E-07"
         ixz="6.39601885705249E-05"
         iyy="0.00112588477433771"
@@ -637,8 +637,8 @@
         value="0.215297840693502" />
       <inertia
         ixx="0.000266892008210912"
-        ixy="4.22434599188815E-06"
-        ixz="-3.41996882698485E-06"
+        ixy="4.22434599188816E-06"
+        ixz="-3.41996882698488E-06"
         iyy="0.000249193345450758"
         iyz="1.5100010190188E-05"
         izz="5.77461596420612E-05" />
@@ -684,17 +684,17 @@
     name="right_front_wheel">
     <inertial>
       <origin
-        xyz="0.0054969 -0.022949 0.11985"
+        xyz="0.00549692887111342 -0.0229485777091253 0.119847481625213"
         rpy="0 0 0" />
       <mass
-        value="0.59276" />
+        value="0.592760238512045" />
       <inertia
-        ixx="0.0012757"
-        ixy="-0.00020228"
-        ixz="4.8789E-19"
-        iyy="0.0021233"
-        iyz="-3.3543E-18"
-        izz="0.0012299" />
+        ixx="0.0012756713003382"
+        ixy="-0.000202280629685217"
+        ixz="8.67361737988404E-19"
+        iyy="0.00212333997025137"
+        iyz="-3.71339244076285E-18"
+        izz="0.00122987493289774" />
     </inertial>
     <visual>
       <origin
@@ -707,7 +707,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -724,13 +724,225 @@
     name="right_front_wheel_joint"
     type="continuous">
     <origin
-      xyz="-0.4365 0.01525 -0.16809"
-      rpy="-3.1408 0.0034092 0.22265" />
+      xyz="0 0 -0.1351"
+      rpy="-3.1408 0.0034092 -2.6963" />
     <parent
-      link="right_rocker" />
+      link="right_rocker_wheel_strut" />
     <child
       link="right_front_wheel" />
     <axis
       xyz="0.0034092 0.00077185 0.99999" />
+  </joint>
+  <link
+    name="right_bogie">
+    <inertial>
+      <origin
+        xyz="0.0759568390256915 0.0148074417247584 0.00797636919353462"
+        rpy="0 0 0" />
+      <mass
+        value="0.191498434460467" />
+      <inertia
+        ixx="0.000499608172315682"
+        ixy="-1.18267529546553E-10"
+        ixz="-0.000888438614462158"
+        iyy="0.00218514017400551"
+        iyz="1.25077098924792E-09"
+        izz="0.00170716647871943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_bogie.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_bogie.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_bogie_joint"
+    type="continuous">
+    <origin
+      xyz="0.19198 0 -0.13059"
+      rpy="0 0.14041 0" />
+    <parent
+      link="right_rocker" />
+    <child
+      link="right_bogie" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_middle_wheel">
+    <inertial>
+      <origin
+        xyz="0.0127730598712159 -0.0564180684661425 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.592760238512045" />
+      <inertia
+        ixx="0.0012756713003382"
+        ixy="-0.000202280629685217"
+        ixz="6.50521303491303E-19"
+        iyy="0.00212333997025137"
+        iyz="-2.53432257818487E-18"
+        izz="0.00122987493289774" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_middle_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_middle_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.22016 0 -0.14502"
+      rpy="-0.12179 0.49252 2.8883" />
+    <parent
+      link="right_bogie" />
+    <child
+      link="right_middle_wheel" />
+    <axis
+      xyz="0.22081 -0.97532 0" />
+  </joint>
+  <link
+    name="right_bogie_wheel_strut">
+    <inertial>
+      <origin
+        xyz="-0.0102956261285994 0.0460946208416417 -0.107848213200591"
+        rpy="0 0 0" />
+      <mass
+        value="0.215297868113389" />
+      <inertia
+        ixx="0.000266892029173771"
+        ixy="4.22435230111114E-06"
+        ixz="-3.4199751870707E-06"
+        iyy="0.000249193360127232"
+        iyz="1.51000188490165E-05"
+        izz="5.77461732228625E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_bogie_wheel_strut.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_bogie_wheel_strut.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_bogie_wheel_strut_joint"
+    type="continuous">
+    <origin
+      xyz="0.282426325346583 0.0146249999999995 0"
+      rpy="0 0 3.1072058885597" />
+    <parent
+      link="right_bogie" />
+    <child
+      link="right_bogie_wheel_strut" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_back_wheel">
+    <inertial>
+      <origin
+        xyz="-0.00583033423762963 0.0257523412178216 -4.9960036108132E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.592760238512046" />
+      <inertia
+        ixx="0.0012756713003382"
+        ixy="-0.000202280629685217"
+        ixz="4.87890977618477E-19"
+        iyy="0.00212333997025137"
+        iyz="-3.54398585131199E-18"
+        izz="0.00122987493289774" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_back_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/right_back_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_back_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.00012191 2.7601E-05 -0.16213"
+      rpy="0.23717 -0.80393 3.0404" />
+    <parent
+      link="right_bogie_wheel_strut" />
+    <child
+      link="right_back_wheel" />
+    <axis
+      xyz="0.22081 -0.97532 0" />
   </joint>
 </robot>
