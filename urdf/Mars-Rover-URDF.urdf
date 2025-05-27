@@ -8,17 +8,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="-1.3878E-17 2.7756E-17 0.066566"
+        xyz="-1.38777878078145E-17 2.77555756156289E-17 0.0665660194174758"
         rpy="0 0 0" />
       <mass
-        value="1.5948" />
+        value="1.59483552" />
       <inertia
-        ixx="0.013903"
-        ixy="8.341E-20"
-        ixz="6.3443E-20"
-        iyy="0.028597"
-        iyz="9.917E-20"
-        izz="0.035254" />
+        ixx="0.01390300058104"
+        ixy="8.34099127220805E-20"
+        ixz="6.53256743568878E-20"
+        iyy="0.0285974954758624"
+        iyz="-7.98437892769274E-21"
+        izz="0.0352539264984576" />
     </inertial>
     <visual>
       <origin
@@ -27,6 +27,46 @@
       <geometry>
         <mesh
           filename="package://Mars-Rover-URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rocker_to_frame_connector">
+    <inertial>
+      <origin
+        xyz="-0.0019 -0.19428 0.18723"
+        rpy="0 0 0" />
+      <mass
+        value="0.017817" />
+      <inertia
+        ixx="1.6441E-06"
+        ixy="-6.0808E-14"
+        ixz="2.6134E-15"
+        iyy="8.915E-06"
+        iyz="1.88E-07"
+        izz="8.303E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/rocker_to_frame_connector.STL" />
       </geometry>
       <material
         name="">
@@ -40,8 +80,21 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Mars-Rover-URDF/meshes/base_link.STL" />
+          filename="package://Mars-Rover-URDF/meshes/rocker_to_frame_connector.STL" />
       </geometry>
     </collision>
   </link>
+  <joint
+    name="rocker_to_frame_connector_joint"
+    type="fixed">
+    <origin
+      xyz="0.0079 -0.003 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rocker_to_frame_connector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
 </robot>
