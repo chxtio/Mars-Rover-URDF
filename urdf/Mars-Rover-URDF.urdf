@@ -17,7 +17,7 @@
         ixy="8.34099127220805E-20"
         ixz="6.53256743568878E-20"
         iyy="0.0285974954758624"
-        iyz="-7.98437892769272E-21"
+        iyz="-7.98437892769273E-21"
         izz="0.0352539264984576" />
     </inertial>
     <visual>
@@ -48,16 +48,16 @@
     name="xbar_top_frame">
     <inertial>
       <origin
-        xyz="0.00081149909692961 8.32667268468867E-16 0.1957"
+        xyz="-0.00298850090307037 9.29811783123569E-16 0.1957"
         rpy="0 0 0" />
       <mass
         value="0.180967186857142" />
       <inertia
         ixx="0.000721536956668616"
         ixy="-2.7642978576952E-19"
-        ixz="1.94373796744225E-19"
+        ixz="1.94367208177944E-19"
         iyy="0.00387959064131599"
-        iyz="1.13512860712822E-19"
+        iyz="1.13496704841483E-19"
         izz="0.00459369904571847" />
     </inertial>
     <visual>
@@ -88,7 +88,7 @@
     name="xbar_to_chassis_joint"
     type="fixed">
     <origin
-      xyz="0.0176427022776656 -0.000626311138720845 0.0245815452491259"
+      xyz="0.0214427022776656 -0.000626311138720928 0.024581545249126"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -101,14 +101,14 @@
     name="rocker_to_frame_mount_left">
     <inertial>
       <origin
-        xyz="-0.00189999920235706 -0.194277679658848 0.187230370865528"
+        xyz="0.00190000079764292 -0.194277679658848 0.187230370865528"
         rpy="0 0 0" />
       <mass
         value="0.0178174846110633" />
       <inertia
-        ixx="1.64411942078336E-06"
-        ixy="-6.08082946915319E-14"
-        ixz="2.61335301650268E-15"
+        ixx="1.64411942078337E-06"
+        ixy="-6.08082946969275E-14"
+        ixz="2.61335305953921E-15"
         iyy="8.9149566286252E-06"
         iyz="1.87998295961392E-07"
         izz="8.30298452857927E-06" />
@@ -154,17 +154,17 @@
     name="left_rocker">
     <inertial>
       <origin
-        xyz="-0.14574 -0.014649 -0.03864"
+        xyz="-0.145741143663234 -0.0146489091382667 -0.0386401086913282"
         rpy="0 0 0" />
       <mass
-        value="0.2386" />
+        value="0.238601333424936" />
       <inertia
-        ixx="6.5639E-05"
-        ixy="-3.2246E-07"
-        ixz="6.396E-05"
-        iyy="0.0011259"
-        iyz="-1.2911E-06"
-        izz="0.0010882" />
+        ixx="6.56386397841031E-05"
+        ixy="-3.22464227159726E-07"
+        ixz="6.39601909179775E-05"
+        iyy="0.00112588477072356"
+        iyz="-1.29107457638619E-06"
+        izz="0.00108818807546615" />
     </inertial>
     <visual>
       <origin
@@ -177,7 +177,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -194,13 +194,66 @@
     name="left_rocker_joint"
     type="continuous">
     <origin
-      xyz="-0.0019 -0.2008 0.1732"
-      rpy="0 0.20522 0" />
+      xyz="0.00189999999999785 -0.2008 0.173199999999999"
+      rpy="0 0.205218691223717 0" />
     <parent
       link="rocker_to_frame_mount_left" />
     <child
       link="left_rocker" />
     <axis
       xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_rocker_wheel_strut">
+    <inertial>
+      <origin
+        xyz="0.0046308 -0.047461 -0.17255"
+        rpy="0 0 0" />
+      <mass
+        value="0.2153" />
+      <inertia
+        ixx="0.00026769"
+        ixy="1.7674E-06"
+        ixz="1.4017E-06"
+        iyy="0.0002484"
+        iyz="-1.5419E-05"
+        izz="5.7746E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/left_rocker_wheel_strut.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/left_rocker_wheel_strut.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rocker_wheel_strut_joint"
+    type="continuous">
+    <origin
+      xyz="-0.4365 -0.01475 -0.061101"
+      rpy="0 0 3.0493" />
+    <parent
+      link="left_rocker" />
+    <child
+      link="left_rocker_wheel_strut" />
+    <axis
+      xyz="0 0 1" />
   </joint>
 </robot>
