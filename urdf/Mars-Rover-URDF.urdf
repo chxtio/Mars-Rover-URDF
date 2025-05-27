@@ -48,16 +48,16 @@
     name="xbar_top_frame">
     <inertial>
       <origin
-        xyz="0.00191149909692967 8.60422844084496E-16 0.1957"
+        xyz="0.00081149909692961 8.32667268468867E-16 0.1957"
         rpy="0 0 0" />
       <mass
         value="0.180967186857142" />
       <inertia
         ixx="0.000721536956668616"
         ixy="-2.7642978576952E-19"
-        ixz="1.94392047830128E-19"
-        iyy="0.003879590641316"
-        iyz="1.1352659320346E-19"
+        ixz="1.94373796744225E-19"
+        iyy="0.00387959064131599"
+        iyz="1.13512860712822E-19"
         izz="0.00459369904571847" />
     </inertial>
     <visual>
@@ -88,7 +88,7 @@
     name="xbar_to_chassis_joint"
     type="fixed">
     <origin
-      xyz="0.0165427022776656 -0.000626311138720845 0.0245815452491259"
+      xyz="0.0176427022776656 -0.000626311138720845 0.0245815452491259"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -101,17 +101,17 @@
     name="rocker_to_frame_mount_left">
     <inertial>
       <origin
-        xyz="-0.003 -0.19428 0.18723"
+        xyz="-0.00189999920235706 -0.194277679658848 0.187230370865528"
         rpy="0 0 0" />
       <mass
-        value="0.017817" />
+        value="0.0178174846110633" />
       <inertia
-        ixx="1.6441E-06"
-        ixy="-6.0808E-14"
-        ixz="2.6134E-15"
-        iyy="8.915E-06"
-        iyz="1.88E-07"
-        izz="8.303E-06" />
+        ixx="1.64411942078336E-06"
+        ixy="-6.08082946915319E-14"
+        ixz="2.61335301650268E-15"
+        iyy="8.9149566286252E-06"
+        iyz="1.87998295961392E-07"
+        izz="8.30298452857927E-06" />
     </inertial>
     <visual>
       <origin
@@ -124,7 +124,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -142,12 +142,65 @@
     type="fixed">
     <origin
       xyz="0 0 0"
-      rpy="0 0 3.1416" />
+      rpy="0 0 3.14159265358979" />
     <parent
       link="xbar_top_frame" />
     <child
       link="rocker_to_frame_mount_left" />
     <axis
       xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_rocker">
+    <inertial>
+      <origin
+        xyz="-0.14574 -0.014649 -0.03864"
+        rpy="0 0 0" />
+      <mass
+        value="0.2386" />
+      <inertia
+        ixx="6.5639E-05"
+        ixy="-3.2246E-07"
+        ixz="6.396E-05"
+        iyy="0.0011259"
+        iyz="-1.2911E-06"
+        izz="0.0010882" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/left_rocker.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Mars-Rover-URDF/meshes/left_rocker.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rocker_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0019 -0.2008 0.1732"
+      rpy="0 0.20522 0" />
+    <parent
+      link="rocker_to_frame_mount_left" />
+    <child
+      link="left_rocker" />
+    <axis
+      xyz="0 1 0" />
   </joint>
 </robot>
