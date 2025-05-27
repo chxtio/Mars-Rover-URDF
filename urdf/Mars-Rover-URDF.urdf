@@ -32,6 +32,22 @@ Stephen Brawner (brawner@gmail.com)
     <color rgba="1 0 0 1" />
   </material>
 
+  <material name="polycarbonate_clear">
+    <color rgba="0.9 0.9 1 0.3" /> <!-- Slight bluish transparency for chassis -->
+  </material>
+
+  <material name="aluminum">
+    <color rgba="0.8 0.8 0.8 1" /> <!-- Light gray for aluminum frame and x-bars -->
+  </material>
+
+  <material name="teal_blue">
+    <color rgba="0.1 0.7 0.75 1" /> <!-- For the teal 3D printed joints/mounts -->
+  </material>
+
+  <material name="rubber_black">
+    <color rgba="0.05 0.05 0.05 1" /> <!-- Extra dark for wheels/tires -->
+  </material>
+
   <link
     name="base_link">
     <inertial>
@@ -56,11 +72,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/base_link.STL" />
       </geometry>
-      <material
-        name="blue">
-        <!-- <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" /> -->
-      </material>
+      <material name="polycarbonate_clear" />
     </visual>
     <collision>
       <origin
@@ -73,9 +85,11 @@ Stephen Brawner (brawner@gmail.com)
     </collision>
   </link>
   <gazebo reference="base_link">
-    <material>Gazebo/Black</material>
+    <material>Gazebo/Transparent</material>
   </gazebo>
-
+  <gazebo reference="base_link">
+    <material>Gazebo/Transparent</material>
+  </gazebo>
 
   <link
     name="xbar_top_frame">
@@ -101,11 +115,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/xbar_top_frame.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -117,6 +127,11 @@ Stephen Brawner (brawner@gmail.com)
       </geometry>
     </collision>
   </link>
+  <gazebo reference="xbar_top_frame">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+
   <joint
     name="xbar_to_chassis_joint"
     type="fixed">
@@ -154,11 +169,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/rocker_to_frame_mount_left.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -207,11 +218,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/left_rocker.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -260,11 +267,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/left_rocker_wheel_strut.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -313,11 +316,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/front_left_wheel.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="rubber_black" />
     </visual>
     <collision>
       <origin
@@ -366,11 +365,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/left_bogie.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -419,11 +414,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/left_middle_wheel.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="rubber_black" />
     </visual>
     <collision>
       <origin
@@ -472,11 +463,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/left_bogie_wheel_strut.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -525,11 +512,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/front_back_wheel.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="rubber_black" />
     </visual>
     <collision>
       <origin
@@ -578,11 +561,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/rocker_to_frame_mount_right.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -631,11 +610,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/right_rocker.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -684,11 +659,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/right_rocker_wheel_strut.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -737,11 +708,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/right_front_wheel.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="rubber_black" />
     </visual>
     <collision>
       <origin
@@ -790,11 +757,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/right_bogie.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -843,11 +806,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/right_middle_wheel.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="rubber_black" />
     </visual>
     <collision>
       <origin
@@ -896,11 +855,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/right_bogie_wheel_strut.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="aluminum" />
     </visual>
     <collision>
       <origin
@@ -949,11 +904,7 @@ Stephen Brawner (brawner@gmail.com)
         <mesh
           filename="package://Mars-Rover-URDF/meshes/right_back_wheel.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="rubber_black" />
     </visual>
     <collision>
       <origin
